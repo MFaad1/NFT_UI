@@ -1,0 +1,68 @@
+.Vision_container {
+    background-image: url('imgs/vision.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    .vision_innerContainer {
+        background: rgba(0, 0, 0, 0.29);
+        height: 100%;
+        width: 100%;
+        padding: 20px 0px ;
+        .Vision_Div {
+            display: flex;
+            color: #fff;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 85%;
+            margin: 0 auto;
+    
+            p:nth-child(1) {
+                font: 400 90px "Zen Dots", sans-serif;
+                color: #fff;
+            }
+    
+            p:nth-child(2) {
+                font: 400 24px "inter", sans-serif;
+                color: rgba(255, 255, 255, 1);
+                line-height: 29.05px;
+                text-align: center;
+            }
+    
+            button {
+                width: 154px;
+                height: 46.76px;
+                gap: 0px;
+                border-radius: 6.45px;
+                opacity: 0px;
+                background: linear-gradient(90deg, #ED213A 0%, #FD1640 100%);
+                border: none;
+                outline: none;
+                color: #fff;
+                cursor: pointer;
+                font: 400 15.98px "inter", sans-serif;
+    
+    
+            }
+        }
+    }
+
+}
+
+
+.Collection_Video {
+    width: 100%;
+
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}

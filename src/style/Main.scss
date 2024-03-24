@@ -1,0 +1,70 @@
+.main_Video_Div {
+  // height: 900px;
+  position: relative;
+  width: 100%;
+  .main-video_innerDiv {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .Main_Video_inner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    .video {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .main-Cards {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 50px 0px;
+max-width: 50%;
+  }
+}
+
+.main_Card {
+  height: 250px;
+  width: 250px;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card_Details {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    p {
+      width: 166px;
+      overflow-wrap: break-word;
+      text-align: center;
+      font: 400 24.58px "inter", sans-serif;
+    }
+  }
+}

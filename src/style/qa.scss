@@ -1,0 +1,108 @@
+.qa_section {
+  background-image: url("imgs/lastbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #060001;
+  padding: 45px 0px ;
+}
+
+.qa_container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .qa_container_leftside {
+    width: 60%;
+    min-width: 300px;
+  }
+  .qa_container_leftside_intro {
+    color: #fff;
+    h1 {
+      font: 400 50px "Zen Dots", sans-serif;
+    }
+    p {
+      font: 400 24.58px "inter", sans-serif;
+      line-height: 29.75px;
+    }
+
+    .qa_container_leftside_navigation_Buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+      // width: fit-content;
+      border-bottom: 3px solid #6f6f6f;
+      flex-wrap: wrap;
+      width: 90%;
+
+      p {
+        cursor: pointer;
+        padding: 10px 0px;
+        margin-bottom: -3px;
+        word-wrap: normal
+      }
+      .activeNav {
+        @extend p;
+        border-bottom: 5px solid red;
+      }
+    }
+  }
+
+  .qa_container_rightside {
+    width: 40%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.accordion-button {
+  color: #fd1640 !important;
+  background-color: #950d29 !important;
+  border: none !important;
+  data-bs-toggle {
+    color: #950d29 !important;
+  }
+  .collapse {
+    color: #fd1640 !important;
+  }
+}
+.accordion-button::after {
+  color: #fd1640 !important;
+}
+.accordion-header {
+  border: none !important;
+}
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none;
+}
+.accordion-body {
+  color: #fff !important;
+  background-color: #950d29 !important;
+}
+
+.Accordion_Section{ 
+  margin-top: 15px;
+  width: 90%;
+.accordion{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.accordion_name_Container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .accordion_name{
+    background-color: #950d29 !important;
+  color: #fff;
+  padding: 8px 36px;
+  margin-bottom: 0;
+  }
+
+}
+}

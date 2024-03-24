@@ -1,0 +1,207 @@
+.Roadmap_section {
+  width: 100%;
+  background-color: #060001;
+  color: #fff;
+
+  .Roadmap_intro {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+    h1 {
+      font: 400 50px "Zen Dots", sans-serif;
+      color: #fff;
+      span {
+        color: #fd1640;
+      }
+    }
+    p {
+      font: 400 24.58px "inter", sans-serif;
+      color: #fff;
+    }
+  }
+
+  .RoadMap_main_Container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .Roadmap_container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      position: relative;
+      padding-top: 42px;
+
+      .phase {
+        width: 40%;
+        min-width: 200px;
+        background-color: rgba(253, 22, 64, 0.3);
+        color: #fff;
+        padding: 10px;
+        font: 400 20px "inter", sans-serif;
+        color: rgba(253, 22, 64, 1);
+        display: flex;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .phase-left {
+        @extend .phase;
+        margin-left: 266px;
+        position: relative;
+        z-index: 100;
+        @media (max-width: 550px) {
+          margin-left: 0px;
+        }
+      }
+
+      .RoadMap_Details_Container {
+        position: relative;
+        z-index: 10;
+        .RoadMap_Details_inner_Container {
+          padding: 10px 0px 10px 50px;
+          background-color: rgba(253, 22, 64, 1);
+          ul {
+            li {
+              font: 400 20px "inter", sans-serif;
+            }
+          }
+        }
+      }
+
+      .RoadMap_Details_Container-left {
+        @extend .RoadMap_Details_Container;
+        .RoadMap_Details_inner_Container_left {
+          @extend .RoadMap_Details_inner_Container;
+          padding-left: 283px;
+          @media (max-width: 550px) {
+            padding: 0px;
+          }
+        }
+      }
+
+      .RoadMaP_VideoContainer {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 0;
+        background-color: transparent;
+        z-index: 9;
+        top: -19px;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .RoadMaP_VideoContainer_left {
+        @extend .RoadMaP_VideoContainer;
+        left: -36px;
+      }
+      .avatarProfile {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        // right: -18px;
+        right: 0px;
+        background-color: transparent;
+        z-index: 10;
+        top: 21px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .avatarProfile1 {
+        @extend .avatarProfile;
+        height: 208px;
+        width: 330px;
+        right: 0px;
+        top: 35px;
+      }
+      .avatarProfile3 {
+        @extend .avatarProfile;
+        height: 242px;
+        width: 248px;
+        right: 26px;
+        top: 25px;
+      }
+
+      .avatarProfile_left2 {
+        @extend .avatarProfile;
+        top: 17px;
+        left: -16px;
+      }
+
+      .avatarProfile_left4 {
+        @extend .avatarProfile;
+        height: 201px;
+        width: 276px;
+        top: 45px;
+        left: -21px;
+      }
+    }
+  }
+}
+
+.roadMap_main_sec{
+  display: flex;
+  align-items: center;
+  width: 80%;
+margin: 0 auto;
+gap: 10px;
+height: 100%;
+
+.roadmap_straight_line_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 67px;
+    .roadmap_straight_line{
+      border-left: 5px dashed #fd1640;
+      height: 220px;
+      position: relative;
+      z-index: 100;
+    }
+    img{
+      z-index: 100;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      top: -10px;
+    }
+}
+}
+.roadmap-Sections {
+  background-color: #060001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0px;
+  position: relative;
+  z-index: 100;
+  svg {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 550px) {
+  .avatarProfile {
+    display: none;
+  }
+
+  .RoadMaP_VideoContainer {
+    display: none;
+  }
+}

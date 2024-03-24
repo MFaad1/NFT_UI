@@ -1,0 +1,121 @@
+.Header_main_Container {
+  width: 100%;
+  position: relative;
+  width: 100%;
+
+  .Header_inner_Container {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .videoContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    .video {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 19px 20px 0px 20px;
+  color: #fff;
+}
+
+.inner_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  .logo {
+    width: 111px;
+    height: 103.75px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.nav_item_container {
+  gap: 19px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .nav_item_names {
+    text-decoration: none;
+    font: 600 20px "inter", sans-serif;
+    color: #fff;
+    line-height: 24.2px;
+    &:nth-last-child(1){
+     border-radius: 8px;
+        padding: 12px 10px;
+        background: linear-gradient(90deg, #ED213A 0%, #FD1640 100%);
+
+    }
+  }
+
+  .active_nav_item_names {
+    @extend .nav_item_names;
+    color: #fd1640;
+    &:nth-last-child(1){
+      color: #ffff !important;
+    }
+  }
+}
+
+.Generate-AiSection {
+  width: 90%;
+  margin: 0 auto;
+  padding: 210px 0px;
+  p:nth-child(2) {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24.58px;
+  }
+
+  .Generate-AiSection_heading {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    word-break: break-word;
+  }
+
+  button {
+    margin-top: 20px;
+    width: 154px;
+    height: 46.76px;
+    border-radius: 6.45px;
+    opacity: 0px;
+    background: linear-gradient(90deg, #ed213a 0%, #fd1640 100%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: 700 15.98px "inter", sans-serif;
+    color: #fff;
+    line-height: 19.34px;
+  }
+}
+
+.Header_inner_Container {
+  overflow: hidden;
+}
+.straight_line {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 1);
+}

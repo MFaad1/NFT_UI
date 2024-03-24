@@ -1,0 +1,108 @@
+.image_gallery_Container {
+  background-color: #0c000d;
+
+  width: 100%;
+  .intro_Section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 40px auto;
+    h1 {
+      font: 400 48px "Zen Dots", sans-serif;
+      color: rgba(255, 255, 255, 1);
+    }
+    p {
+      text-align: center;
+      font: 400 24.58px "inter", sans-serif;
+      list-style: 29.75px;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .gallery-section {
+    display: flex;
+    width: 90%;
+    gap: 15px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    .gallery-leftSide {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      img {
+        width: 280px;
+        height: 600px;
+        @media (max-width: 550px) {
+          width: 100%;
+        }
+      }
+
+      img:nth-child(1) {
+        width: 280px;
+        height: 300px;
+        @media (max-width: 550px) {
+          width: 100%;
+        }
+      }
+    }
+    .gallery-rightside {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .gallery-rightside_FirstSection {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 15px;
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          img {
+            height: 292px;
+            width: 280px;
+            @media (max-width: 550px) {
+              width: 100%;
+            }
+          }
+        }
+        div:nth-child(1) {
+          @extend div;
+          img {
+            height: 600px;
+            width: 600px;
+            @media (max-width: 600px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .gallery-rightside_secondSection {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        img {
+          height: 300px;
+          width: 300px;
+          @media (max-width: 550px) {
+            width: 100%;
+          }
+        }
+        img:nth-child(2) {
+          @extend img;
+          width: 580px;
+          @media (max-width: 600px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
