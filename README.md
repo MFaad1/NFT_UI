@@ -1,9 +1,6 @@
 # React + TypeScript + Vite
 
 
-
-
-
 # React + TypeScript + Vite Project
 
 This is a starter template for building a React application with TypeScript using Vite as the build tool.
